@@ -1,4 +1,4 @@
-# css-gradient-editor
+# CSS gradient editor
 
 > CSS gradient editor
 
