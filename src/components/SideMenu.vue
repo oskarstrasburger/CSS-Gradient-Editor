@@ -21,3 +21,10 @@ export default {
   name: 'SideMenu',
 };
 </script>
+
+<style scope>
+  .el-menu {
+    height: 100%;
+  }
+</style>
+

@@ -23,7 +23,7 @@ import VueRouter from 'vue-router';
 import HomePage from '@/containers/HomePage';
 import SkeletonPage from '@/containers/SkeletonPage';
 
-import SideMenu from './components/SideMenu';
+import SideMenu from '@/components/SideMenu';
 
 const routes = [
   { path: '/', component: HomePage },
@@ -61,6 +61,10 @@ export default {
   .app {
     display: flex;
     min-height: 100vh;
+  }
+
+  .el-main {
+    padding: 0 20px;
   }
 
   .el-header {
