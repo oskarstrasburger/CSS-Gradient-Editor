@@ -20,8 +20,8 @@
 <script>
 import VueRouter from 'vue-router';
 
-import HomePage from './containers/HomePage';
-import SkeletonPage from './containers/SkeletonPage';
+import HomePage from '@/containers/HomePage';
+import SkeletonPage from '@/containers/SkeletonPage';
 
 import SideMenu from './components/SideMenu';
 
