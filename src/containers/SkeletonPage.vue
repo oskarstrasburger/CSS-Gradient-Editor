@@ -1,7 +1,14 @@
 <template>
   <div class="route-skeleton">
+    <el-input
+      type="textarea"
+      class="code"
+      :autosize="{ minRows: 1, maxRows: 20}"
+      v-model="codeOutput">
+    </el-input>
     <h3>Output</h3>
-    <pre v-highlightjs="codeOutput"><code class="css">{{ codeOutput}}</code></pre>
+
+    <pre><code class="css">{{ codeOutput}}</code></pre>
   </div>
 </template>
 
@@ -19,10 +26,14 @@
 </script>
 
 <style lang="scss" scope>
+  .code .el-textarea__inner {
+    font-family: 'Courier New', Courier, monospace;
+  }
   $border: 4px;
   pre {
     position: relative;
     border: $border dashed #c2c2c2;
+    padding: 4px 10px;
 
     &:before {
       content: '';
