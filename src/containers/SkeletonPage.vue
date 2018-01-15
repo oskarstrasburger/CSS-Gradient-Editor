@@ -13,16 +13,17 @@
 </template>
 
 <script>
-  export default {
-    name: 'SkeletonPage',
-    data() {
-      return {
-        codeOutput:
-`background: gradient(),
-            gradient(),`,
-      };
-    },
-  };
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
+
+@Component({
+  data() {
+    return {
+      codeOutput: 'background: gradient()',
+    };
+  },
+})
+export default class SkeletonPage extends Vue { }
 </script>
 
 <style lang="scss" scope>

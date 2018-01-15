@@ -18,30 +18,32 @@
 </template>
 
 <script>
+import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Component from 'vue-class-component';
 
 import HomePage from '@/containers/HomePage';
 import SkeletonPage from '@/containers/SkeletonPage';
 
 import SideMenu from '@/components/SideMenu';
 
-const routes = [
-  { path: '/', component: HomePage },
-  { path: '/skeleton', component: SkeletonPage },
-];
-
 const router = new VueRouter({
   mode: 'history',
-  routes,
+  routes: [
+    { path: '/', component: HomePage },
+    { path: '/skeleton', component: SkeletonPage },
+  ],
 });
 
-export default {
-  name: 'app',
+@Component({
   router,
   components: {
     SideMenu,
   },
-};
+})
+export default class App extends Vue {
+
+}
 </script>
 
 <style lang="scss">

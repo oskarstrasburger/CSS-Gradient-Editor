@@ -5,7 +5,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'HomePage',
-  };
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
+
+@Component({})
+export default class HomePage extends Vue {}
 </script>
