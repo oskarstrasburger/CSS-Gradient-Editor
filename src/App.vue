@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="app">
     <el-container>
-      <el-header><h1>CSS Gradient Sketeton Loaders editor</h1></el-header>
+      <el-header><h1>CSS Gradient Skeleton Loaders editor</h1></el-header>
       <el-container>
         <el-aside width="300px">
           <SideMenu />
